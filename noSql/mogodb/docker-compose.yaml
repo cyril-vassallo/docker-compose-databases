@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+
+  mongo-db:
+    image: "mongo:5.0.11"
+    container_name: mongo-db
+    working_dir: /usr/www/mongo-db
+    ports:
+      - ${MONGODB_PORT:-27017}:${MONGODB_PORT:-27017}
+    volumes:
+      - "./volumes/db:/data/db"
+      - "./volumes/mongo-db:/usr/www/mongo-db"
+    networks:
+      - mongodb
+
+networks:
+  mongodb:

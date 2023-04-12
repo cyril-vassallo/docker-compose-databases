@@ -1,3 +1,4 @@
 /sql/mysql-phpmyadmin/volumes
 /sql/postgresql-pgadmin/volumes
+/noSql/mogodb/volumes
 .DS_Store

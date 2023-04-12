@@ -1,1 +1,0 @@
-This repository contain SGBD's setup
